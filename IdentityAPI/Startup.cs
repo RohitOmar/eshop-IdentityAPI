@@ -64,8 +64,10 @@ namespace IdentityAPI
             //}
 
             app.UseSwagger();
+            
 
             app.UseCors();
+            InitializeDatabase(app);
             app.UseMvc();
         }
 
